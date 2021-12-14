@@ -1,7 +1,8 @@
 # Aplicacao Go Lang - FullCycle
 [Aplicações escaláveis com Go Lang - Full Cycle](https://www.youtube.com/watch?v=nTmZlzwTErM)<br>
 <br>
-Foi desenvolvido uma aplicação para processamento de uma transação em Go Lang, o obejetivo com este serviço foi mais para aprender o que erra o Go e como se programava com ele pois é uma linguagem que está popular, e está no meu portifólio de aprendizagem.
+Foi desenvolvido uma aplicação para processamento de uma transação em Go Lang, o obejetivo com este serviço foi mais para aprender o que erra o Go e como se programava com ele pois é uma linguagem que está popular, e está no meu portifólio de aprendizagem.<br>
+Tinha como regras de negócio que a transação não podia ser maior que R$1000 e menor que R$1 caso nao tendesse essas regras, retornava o status reject e uma mensagem dizendo qual foi a rejeição.
 <br>
 
 # O que foi apresentado
