@@ -1,13 +1,13 @@
 package process_transaction
 
 type TransactionDtoInput struct {
-	ID        string
-	AccountID string
-	Ammount   float64
+	ID        string  `json:"id"`
+	AccountID string  `json:"account_id"`
+	Ammount   float64 `json:"ammount"`
 }
 
 type TransactionDtoOutput struct {
-	ID           string
-	Status       string
-	ErrorMessage string
+	ID           string `json:"id"`
+	Status       string `json:"status"`
+	ErrorMessage string `json:"error_message"`
 }

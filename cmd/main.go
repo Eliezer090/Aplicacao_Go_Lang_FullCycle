@@ -1,6 +1,7 @@
 package main
 
 import (
+	"FullCycle/payments/adapter/api"
 	"FullCycle/payments/adapter/repository"
 	"FullCycle/payments/usecase/process_transaction"
 	"database/sql"
@@ -22,11 +23,16 @@ func main() {
 
 func ExecTestsFinish(db *sql.DB) {
 	repo := repository.NewTransactionRepositoryDb(db)
+	webserver := api.NewWebServer()
+	webserver.Repository = repo
+
 	usecase := process_transaction.NewProcessTransaction(repo)
 
 	fmt.Println(Execute(PassOkTest(), usecase))
 	fmt.Println(Execute(ErrorTestDontHaveLimit(), usecase))
 	fmt.Println(Execute(ErrorTestMustbeGreaterThan1(), usecase))
+
+	webserver.Serve()
 }
 
 func Execute(input process_transaction.TransactionDtoInput, usecase *process_transaction.ProcessTransaction) string {
