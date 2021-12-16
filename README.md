@@ -1,5 +1,6 @@
 # Aplicacao Go Lang - FullCycle
 [Aplicações escaláveis com Go Lang - Full Cycle](https://www.youtube.com/watch?v=nTmZlzwTErM)<br>
+
 <br>
 Foi desenvolvido uma aplicação para processamento de uma transação em Go Lang, o obejetivo com este serviço foi mais para aprender o que erra o Go e como se programava com ele pois é uma linguagem que está popular, e está no meu portifólio de aprendizagem.<br>
 Tinha como regras de negócio que a transação não podia ser maior que R$1000 e menor que R$1 caso nao tendesse essas regras, retornava o status reject e uma mensagem dizendo qual foi a rejeição.<br>
@@ -15,7 +16,10 @@ Foi apresentado toda a extrutura do Go Lang como é criado Funções e Métodos,
  - Rest - Implementado um server Rest para receber requisições
  
 # Links Uteis
+[Clean Architecture - Implementação do server Rest](https://www.youtube.com/watch?v=YaGVURjB33I)<br>
 [Págida do Go Lang](https://go.dev/)<br>
 [Págida de packs do GO](https://pkg.go.dev/)<br>
+
+
 
 
